@@ -11,111 +11,41 @@
        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap/all.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'><link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10 col-xl-8 mx-auto">
-                <!-- <h2 class="h3 mb-4 page-title" style="margin-top: 10px;">Settings</h2> -->
-                <div class="my-4">
-                    <!-- <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Notifications</a>
-                        </li>
-                    </ul> -->
-                    <h5 class="mb-0 mt-5">Settings</h5>
-                    <hr class="my-4" />
-                    <strong class="mb-0">Security</strong>
-                    <p>What should happen if blocked address is detected?</p>
-                    <div class="list-group mb-5 shadow">
-                        <div class="list-group-item">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <strong class="mb-0">Close Tab</strong>
-                                    <p class="text-muted mb-0">Instantly close the tab.</p>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" name="blockingMethod" id="close_tab" value="close_tab" checked/>
-                                        <span class="custom-control-label"></span>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <strong class="mb-0">Clear Tab</strong>
-                                    <p class="text-muted mb-0">Clear the tab and place cursor in the address bar.</p>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" name="blockingMethod" id="clear_tab" value="clear_tab"/>
-                                        <span class="custom-control-label"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <input class="btn btn-primary" type="submit" value="Submit" id="save" value="save">
-                    </div>
-                    <!-- <hr class="my-4" />
-                    <strong class="mb-0">System</strong>
-                    <p>Please enable system alert you will get.</p>
-                    <div class="list-group mb-5 shadow">
-                        <div class="list-group-item">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <strong class="mb-0">Notify me about new features and updates</strong>
-                                    <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="alert3" checked="" />
-                                        <span class="custom-control-label"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <strong class="mb-0">Notify me by email for latest news</strong>
-                                    <p class="text-muted mb-0">Nulla et tincidunt sapien. Sed eleifend volutpat elementum.</p>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="alert4" checked="" />
-                                        <span class="custom-control-label"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-group-item">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <strong class="mb-0">Notify me about tips on using account</strong>
-                                    <p class="text-muted mb-0">Donec in quam sed urna bibendum tincidunt quis mollis mauris.</p>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="alert5" />
-                                        <span class="custom-control-label"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+        <h2 class="title">Settings</h2>
+    
+        <div class="settings">
+            <span class="settings__title field-title">settings</span>
+            <div class="setting">
+                <input type="checkbox" name="blockingMethod" id="close_tab" value="close_tab" checked />
+                <label for="uppercase">Instantly close the tab.</label>
+            </div>
+            <div class="setting">
+                <input type="checkbox" name="blockingMethod" id="clear_tab" value="clear_tab" />
+                <label for="lowercase">Clear the tab and place cursor in the address bar.</label>
             </div>
         </div>
+    
+        <button class="btn generate" type="submit" value="Submit" id="save" value="save">Save</button>
+        <div class="support">
+            <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://codepen.io/dev_loop/" target="_blank"><i class="fab fa-codepen"></i></a>
+        </div>
+        
+        <a class="github-corner" href="https://github.com/devloop01/password-generator" title="Fork me on GitHub" target="_blank">
+            <svg width="80" height="80" viewbox="0 0 250 250">
+                <title>Fork me on GitHub</title>
+                <path d="M0 0h250v250" />
+                <path class="octo-arm" d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px;" />
+                <path class="octo-body" d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" />
+            </svg>
+        </a>
     </div>
-    <script src="bootstrap/jquery-3.6.0.min.js"></script>
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>    
 	<script src="options.js"></script> 
 </body>
 <!DOCTYPE html>

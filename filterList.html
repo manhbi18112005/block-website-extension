@@ -2,17 +2,22 @@
 <html>
 	<head>
 		<style>
-			table, th, td {
-				border: 1px solid black;
-			}
+			table, th, td {FONT-WEIGHT: 500;border: 1px solid white;font-family: 'Montserrat';color: white;width: 350px;height: 35px;text-align: center;position: relative;FONT-VARIANT: JIS04;}
 		</style>
 		<script src="filterList.js"></script>
+		<link rel="stylesheet" href="./bootstrap/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'><link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
-		<div id = "filterList"></div>
-		<div id = "addSite">
-			<input type="text" id="urlInput" />
-			<input type="submit" id="add" value="add">
+		<div class="container">
+			<div class="settings">
+				<div id = "filterList"></div>
+				<div id = "addSite">
+					<input type="text" id="urlInput" />
+					<input type="submit" id="add" value="add">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
